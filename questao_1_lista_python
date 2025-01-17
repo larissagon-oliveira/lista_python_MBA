@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.scatter(df['visitas'], df['preco'], alpha=0.7, edgecolors='k', color='blue')
+
+plt.title('Gráfico de Dispersão: Visitas vs Preço', fontsize=14)
+plt.xlabel('Visitas', fontsize=12)
+plt.ylabel('Preço', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.6)
+
+plt.show()
