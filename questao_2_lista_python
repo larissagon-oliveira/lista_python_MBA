@@ -1,0 +1,18 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    'visitas': [86947, 134868, 143617, 102210, 93407, 151975, 137507, 118568, 59924, 224988, 169767, 91459, 72018, 220235, 310199, 220199, 134187, 219107, 212257, 198209, 129317, 219567, 230917, 139623, 75288, 189707, 221017, 150690],
+    'preco': [4.60, 5.10, 5.30, 4.60, 4.50, 5.60, 6.10, 6.35, 3.60, 3.70, 3.80, 3.60, 4.10, 4.35, 4.60, 4.35, 4.30, 4.50, 4.60, 4.30, 4.80, 5.00, 5.30, 5.10, 4.60, 5.60, 5.30, 5.10]
+}
+
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(10, 6))
+plt.scatter(df['visitas'], df['preco'], color='blue', alpha=0.5)
+plt.title('Gráfico de Dispersão - Visitas vs Preço')
+plt.xlabel('Visitas')
+plt.ylabel('Preço')
+plt.grid(True)
+plt.show()
+
